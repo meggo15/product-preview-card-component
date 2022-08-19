@@ -1,0 +1,63 @@
+/***** BASE STYLES *****/
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: hsl(228, 12%, 48%);
+	background-color: hsl(30, 38%, 92%);
+	font-size: 1em;
+	font-weight: 500;
+	line-height: 1em;
+	
+}
+
+.content-wrapper {
+	background-color: hsl(0, 0%, 100%);
+}
+/***** HEADER *****/
+	 
+header {
+	
+}
+
+h2 {
+	font-size: .875em;
+	text-transform:uppercase;
+	letter-spacing: .875em;
+	
+}
+
+h1 {
+	font-family: 'Fraunces', serif;
+	font-weight: 700;
+	color: hsl(212, 21%, 14%);
+
+}
+	 
+/********** MAIN********/
+
+.product-description {
+
+}
+
+.sale-price {
+	font-family: 'Fraunces', serif;
+	font-size: 2em;
+	color: hsl(158, 36%, 37%);
+	font-weight: 700;
+}
+
+.actual-price {
+	text-decoration: line-through;
+}
+
+.cart-button {
+	background-color: hsl(158, 36%, 37%);
+}
+.cart {
+	color: hsl(0, 0%, 100%);
+}
+
+/********** FOOTER********/
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
