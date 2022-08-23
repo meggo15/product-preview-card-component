@@ -1,26 +1,45 @@
 /***** BASE STYLES *****/
 
+html {
+	font-size: 16px;
+}
+
 body {
 	font-family: 'Montserrat', sans-serif;
 	color: hsl(228, 12%, 48%);
 	background-color: hsl(30, 38%, 92%);
-	font-size: 1em;
+	font-size:1em;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-flow: row wrap;
 	font-weight: 500;
 	line-height: 1em;
 	
 }
 
 .content-wrapper {
-	width: 375px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-flow: row wrap;
+	max-width: 375px;
+	width: 90%;
+	margin: 20px 30px;
     border-radius: 30px;
-	border-radius: 30px;
 	background-color: hsl(0, 0%, 100%);
 
+}
+
+img {
+    border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	width: 100%;
 }
 /***** HEADER *****/
 	 
 header {
-	margin: 0;
+	padding: 10px 20px;
   }
   
 
@@ -28,7 +47,6 @@ h2 {
 	font-size: .875em;
 	text-transform:uppercase;
 	letter-spacing: .875em;
-	
 }
 
 h1 {
@@ -36,19 +54,28 @@ h1 {
 	font-weight: 700;
 	color: hsl(212, 21%, 14%);
 	line-height: 1em;
-
+	margin: 0;
 }
 	 
 /********** MAIN********/
 
 
-img {
-    border-radius: 15px;
-	width: 375px;
+
+main {
+	padding: 10px 20px;
+}
+.product-description {
+	line-height: 1.5em;
+	margin: 0;
+
 }
 
-.product-description {
-	line-height: 2em;
+.price {
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+	align-content: flex-start;
+	flex-flow: row wrap;
 
 }
 
@@ -65,14 +92,23 @@ img {
 
 .cart-button {
 	background-color: hsl(158, 36%, 37%);
-	padding: 10px 10px;
     border-radius: 15px;
-	width: 85%;
+	width: 90%;
+	margin: 20px 20px;
 }
 .cart-text {
 	color: hsl(0, 0%, 100%);
+	padding: 15px 0px;
+	
+}
+
+figure {
+	width: 50px;
+    height: 50px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
+    align-items: center;
+	flex-flow: row wrap;
 }
 
 /********** FOOTER********/
