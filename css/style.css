@@ -11,13 +11,18 @@ body {
 }
 
 .content-wrapper {
+	width: 375px;
+    border-radius: 30px;
+	border-radius: 30px;
 	background-color: hsl(0, 0%, 100%);
+
 }
 /***** HEADER *****/
 	 
 header {
-	
-}
+	margin: 0;
+  }
+  
 
 h2 {
 	font-size: .875em;
@@ -30,12 +35,20 @@ h1 {
 	font-family: 'Fraunces', serif;
 	font-weight: 700;
 	color: hsl(212, 21%, 14%);
+	line-height: 1em;
 
 }
 	 
 /********** MAIN********/
 
+
+img {
+    border-radius: 15px;
+	width: 375px;
+}
+
 .product-description {
+	line-height: 2em;
 
 }
 
@@ -52,9 +65,14 @@ h1 {
 
 .cart-button {
 	background-color: hsl(158, 36%, 37%);
+	padding: 10px 10px;
+    border-radius: 15px;
+	width: 85%;
 }
-.cart {
+.cart-text {
 	color: hsl(0, 0%, 100%);
+	display: flex;
+	justify-content: center;
 }
 
 /********** FOOTER********/
