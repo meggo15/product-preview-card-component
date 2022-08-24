@@ -1,7 +1,8 @@
+
 /***** BASE STYLES *****/
 
 html {
-	font-size: 16px;
+	font-size: 14px;
 }
 
 body {
@@ -39,9 +40,8 @@ img {
 /***** HEADER *****/
 	 
 header {
-	padding: 10px 20px;
-  }
-  
+	padding: 10px 0px;
+}
 
 h2 {
 	font-size: .875em;
@@ -59,11 +59,11 @@ h1 {
 	 
 /********** MAIN********/
 
-
-
 main {
 	padding: 10px 20px;
 }
+
+
 .product-description {
 	line-height: 1.5em;
 	margin: 0;
@@ -75,8 +75,7 @@ main {
     justify-content: space-around;
     align-items: center;
 	align-content: flex-start;
-	flex-flow: row wrap;
-
+	
 }
 
 .sale-price {
@@ -90,28 +89,68 @@ main {
 	text-decoration: line-through;
 }
 
-.cart-button {
+button {
 	background-color: hsl(158, 36%, 37%);
-    border-radius: 15px;
-	width: 90%;
-	margin: 20px 20px;
+    border-radius: 10px;
+	width: 85%;
+	display: flex;
+    align-items: center;
+	justify-content: center;
+	margin: 0;
+	
 }
+
 .cart-text {
 	color: hsl(0, 0%, 100%);
-	padding: 15px 0px;
+	padding: 15px 15px;
+	margin: 0;
 	
 }
 
 figure {
-	width: 50px;
-    height: 50px;
-	display: flex;
-	justify-content: space-around;
-    align-items: center;
-	flex-flow: row wrap;
+	width: 15px;
+    height: 15px;
+	margin: 0;
+	padding: 15px 15px;
 }
 
 /********** FOOTER********/
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (min-width:640px) {
+	/*Tablet styles here*/
+body {
+    margin: 0;
+        background-color: hsl(30, 38%, 92%);
+}
+.content-wrapper {
+	margin: 0 ;
+	margin-top: 150px;
+	margin-bottom: 10px;
+	background-color: hsl(0, 0%, 100%);
+	width: 600px;
+	height: 446px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: row;
+
+}
+
+}
+
+@media only screen and (min-width:1200px) {
+		/*Desktop styles here*/
+
+.content-wrapper {
+	max-width: 1440px;
+	flex-direction: row;
+	display: flex;
+
+}
+
+
+
+}
