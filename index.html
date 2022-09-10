@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-
+  <script src="js/main.js" defer></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,8 @@
 </head>
 <body>
   <div class="content-wrapper">
-    <img src="img/image-product-mobile.jpg" alt="perfume bottle">
+    <img alt="Perfume img" src="img/image-product-desktop.jpg" class="desktop-img" />
+    <img alt="Perfume img" src="img/image-product-mobile.jpg"  class="mobile-img" />
   <main>
   <header>
     <h2>Perfume</h2>
@@ -32,20 +33,16 @@
       <p class="sale-price">$149.99</p>
       <p class="actual-price">$169.99</p>
     </div>
-    <button type="cart-button">
-      <figure>
-      <img src="img/icon-cart.svg" id="cart-img" alt="cart icon">
-      </figure>
-      <p class="cart-text"> Add to Cart</p>
+    <button class="button">
+      <img src="img/icon-cart.svg" alt="cart icon"> Add to Cart
     </button>
     </main>
-    </div>
-  <footer>
+    
+  </div>
     <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://marygorretta.com">Mary Gorretta</a>.
-    </div>
-  </footer>
+  </div>
 
 </body>
 </html>

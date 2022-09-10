@@ -27,16 +27,22 @@ body {
 	max-width: 375px;
 	width: 90%;
 	margin: 20px 30px;
-    border-radius: 30px;
+    border-radius: 5px;
 	background-color: hsl(0, 0%, 100%);
 
 }
 
-img {
-    border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
+.mobile-img {
+	display: block;
+    border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 	width: 100%;
 }
+
+.desktop-img {
+    display: none;
+  }
+
 /***** HEADER *****/
 	 
 header {
@@ -72,10 +78,9 @@ main {
 
 .price {
 	display: flex;
-    justify-content: space-around;
+	flex-direction: row;
     align-items: center;
-	align-content: flex-start;
-	
+
 }
 
 .sale-price {
@@ -83,74 +88,78 @@ main {
 	font-size: 2em;
 	color: hsl(158, 36%, 37%);
 	font-weight: 700;
+	padding-right: 20px;
 }
 
 .actual-price {
 	text-decoration: line-through;
 }
 
-button {
-	background-color: hsl(158, 36%, 37%);
-    border-radius: 10px;
-	width: 85%;
-	display: flex;
-    align-items: center;
-	justify-content: center;
-	margin: 0;
+.button {
+	background-color:hsl(158, 36%, 37%);
+    padding: 5% 45px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color:hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-around;
 	
 }
 
-.cart-text {
-	color: hsl(0, 0%, 100%);
-	padding: 15px 15px;
-	margin: 0;
-	
-}
-
-figure {
+.button img {
+	height: 15px;
 	width: 15px;
-    height: 15px;
-	margin: 0;
-	padding: 15px 15px;
 }
 
-/********** FOOTER********/
+.button-hover {
+	background-color:hsl(0, 0%, 100%);
+	color:hsl(158, 36%, 37%);
+	padding: 5% 45px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
-@media (min-width:640px) {
-	/*Tablet styles here*/
-body {
-    margin: 0;
-        background-color: hsl(30, 38%, 92%);
-}
-.content-wrapper {
-	margin: 0 ;
-	margin-top: 150px;
-	margin-bottom: 10px;
-	background-color: hsl(0, 0%, 100%);
-	width: 600px;
-	height: 446px;
-	border-radius: 15px;
-	display: flex;
-	flex-direction: row;
-
-}
-
-}
 
 @media only screen and (min-width:1200px) {
 		/*Desktop styles here*/
 
-.content-wrapper {
-	max-width: 1440px;
-	flex-direction: row;
-	display: flex;
+body {
 
 }
 
+.content-wrapper {
+	max-width: 1440px;
+	display: flex; 
+	flex-flow: row; 
+	justify-content: center;
+	align-items: center
+
+}
+
+main {
+	height: 100%;
+}
+
+.desktop-img {
+	display: block;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	width: 100%;
+}
+
+.mobile-img {
+	display: none;
+  }
 
 
 }
